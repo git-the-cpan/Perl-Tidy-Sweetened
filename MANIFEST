@@ -8,6 +8,7 @@ lib/Perl/Tidy/Sweetened/Variable/Twigils.pm
 MANIFEST			This list of files
 script/perltidier
 script/perltidy-sweet
+t/args-sbl.t
 t/basic.t
 t/bugs.t
 t/lib/TidierTests.pm
