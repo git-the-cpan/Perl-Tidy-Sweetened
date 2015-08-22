@@ -7,7 +7,7 @@ use strict;
 use warnings;
 use Perl::Tidy qw();
 
-our $VERSION = '1.04';
+our $VERSION = '1.05';
 
 use Perl::Tidy::Sweetened::Pluggable;
 use Perl::Tidy::Sweetened::Keyword::Block;
@@ -17,13 +17,12 @@ our $plugins = Perl::Tidy::Sweetened::Pluggable->new();
 
 # Create a subroutine filter for:
 #    sub foo ($i, $j) {}
-# where both the parameter list and the returns type are optional
 $plugins->add_filter(
     Perl::Tidy::Sweetened::Keyword::Block->new(
         keyword     => 'sub',
         marker      => 'SUB',
         replacement => 'sub',
-        clauses     => ['PAREN?'],
+        clauses     => ['PAREN'],
     ) );
 
 # Create a subroutine filter for:
@@ -89,7 +88,10 @@ Perl::Tidy::Sweetened - Tweaks to Perl::Tidy to support some syntactic sugar
 
 =head1 VERSION
 
-version 1.04
+version 1.05
+
+=for html <a href="https://travis-ci.org/mvgrimes/Perl-Tidy-Sweetened"><img src="https://travis-ci.org/mvgrimes/Perl-Tidy-Sweetened.svg?branch=master" alt="Build Status"></a>
+<a href="https://metacpan.org/pod/Perl::Tidy::Sweetened"><img alt="CPAN version" src="https://badge.fury.io/pl/Perl::Tidy::Sweetened.svg" /></a>
 
 =head1 DESCRIPTION
 
@@ -151,7 +153,7 @@ Mark Grimes, E<lt>mgrimes@cpan.orgE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2014 by Mark Grimes, E<lt>mgrimes@cpan.orgE<gt>.
+This software is copyright (c) 2015 by Mark Grimes, E<lt>mgrimes@cpan.orgE<gt>.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
