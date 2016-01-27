@@ -5,6 +5,7 @@ lib/Perl/Tidy/Sweetened.pm
 lib/Perl/Tidy/Sweetened/Keyword/Block.pm
 lib/Perl/Tidy/Sweetened/Pluggable.pm
 lib/Perl/Tidy/Sweetened/Variable/Twigils.pm
+LICENSE
 MANIFEST			This list of files
 script/perltidier
 script/perltidy-sweet
@@ -17,6 +18,7 @@ t/method-signature-simple.t
 t/moops.t
 t/moosex-declare.t
 t/moosex-method-signatures.t
+t/moosex-role-parameterized.t
 t/p5-mop.t
 t/perl-signatures.t
 TODO
@@ -30,6 +32,7 @@ xt/meta.t
 xt/minimumversion.t
 xt/perlcriticrc
 xt/pod-coverage.t
+xt/pod-spelling.t
 xt/pod.t
 README
 META.yml

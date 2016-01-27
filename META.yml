@@ -1,7 +1,7 @@
 ---
 abstract: 'Tweaks to Perl::Tidy to support some syntactic sugar'
 author:
-  - 'Mark Grimes, E<lt>mgrimes@cpan.orgE<gt>'
+  - 'Mark Grimes E<lt>mgrimes@cpan.orgE<gt>'
 build_requires:
   Test::Differences: '0'
   Test::More: '0.87'
@@ -18,19 +18,19 @@ name: Perl-Tidy-Sweetened
 provides:
   Perl::Tidy::Sweet:
     file: lib/Perl/Tidy/Sweet.pm
-    version: '1.05'
+    version: '1.07'
   Perl::Tidy::Sweetened:
     file: lib/Perl/Tidy/Sweetened.pm
-    version: '1.05'
+    version: '1.07'
   Perl::Tidy::Sweetened::Keyword::Block:
     file: lib/Perl/Tidy/Sweetened/Keyword/Block.pm
-    version: '1.05'
+    version: '1.07'
   Perl::Tidy::Sweetened::Pluggable:
     file: lib/Perl/Tidy/Sweetened/Pluggable.pm
-    version: '1.05'
+    version: '1.07'
   Perl::Tidy::Sweetened::Variable::Twigils:
     file: lib/Perl/Tidy/Sweetened/Variable/Twigils.pm
-    version: '1.05'
+    version: '1.07'
 requires:
   Carp: '0'
   Perl::Tidy: '0'
@@ -39,4 +39,8 @@ resources:
   bugtracker: http://github.com/mvgrimes/perl-tidy-sweetened/issues
   license: http://dev.perl.org/licenses/
   repository: http://github.com/mvgrimes/perl-tidy-sweetened
-version: '1.05'
+version: '1.07'
+x_contributors:
+  - 'Kent Fredric (@kentnl)'
+  - 'Gregoy Oschwald (@oschwal)'
+  - 'Curtis Brandt (@aggrolite)'
